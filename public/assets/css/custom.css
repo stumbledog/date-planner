@@ -1,0 +1,123 @@
+/* Add here all your css styles (customizations) */
+.no-margin{
+    margin:0px;
+}
+.no-padding{
+    padding:0px !important;
+}
+
+.leaflet-popup{
+    opacity:0.9 !important;
+}
+
+.leaflet-top{
+    height:100%;
+}
+
+.searchResult{
+    height:100%;
+    padding-bottom: 30px;
+}
+.inner-results small{
+    color:black;
+    font-size:80%;
+}
+.ui-autocomplete{
+    z-index:1000 !important;
+}
+
+.timeline{
+    opacity: 0.9;
+    width: 600px;
+    height: 30%;
+    background: white;
+    padding: 10px 10px 0px 10px;
+}
+
+.timeline-v2{
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.current-location-icon i{
+    -webkit-animation: jump 0.5s infinite ;
+    animation: jump 0.5s infinite ;
+}
+
+.current-location-icon i:hover{
+    -webkit-animation: 0;
+    animation: 0;
+}
+
+.current-location-icon-loading i{
+    -webkit-animation: spin 1s infinite ;
+    animation: spin 1s infinite ;
+}
+
+.selectedMark{
+    -webkit-animation: jump2 0.5s infinite ;
+    animation: jump2 0.5s infinite ;
+}
+
+.awesome-marker{
+    -webkit-animation: drop 0.5s;
+    animation: drop 0.5s;
+}
+
+
+@-webkit-keyframes jump{
+    0%{margin-top:0px;}
+    25%{margin-top:-7px;} 
+    50%{margin-top:-10px;}
+    75%{margin-top:-7px;}
+    100%{margin-top:0px;}
+}
+
+@keyframes jump{
+    0%{margin-top:0px;}
+    25%{margin-top:-7px;} 
+    50%{margin-top:-10px;}
+    75%{margin-top:-7px;}
+    100%{margin-top:0px;}
+}
+
+@-webkit-keyframes jump2{
+    0%{margin-top:-42px;}
+    25%{margin-top:-49px;} 
+    50%{margin-top:-52px;}
+    75%{margin-top:-49px;}
+    100%{margin-top:-42px;}
+}
+
+@keyframes jump2{
+    0%{margin-top:-42px;}
+    25%{margin-top:-49px;} 
+    50%{margin-top:-52px;}
+    75%{margin-top:-49px;}
+    100%{margin-top:-42px;}
+}
+
+
+@-webkit-keyframes drop{
+    0%{margin-top:-1000px;}
+    50%{margin-top:-42px;}
+    70%{margin-top:-60px;}
+    100%{margin-top:-42px;}
+}
+
+@keyframes drop{
+    0%{margin-top:-1000px;}
+    50%{margin-top:-42px;}
+    70%{margin-top:-60px;}
+    100%{margin-top:-42px;}
+}
+
+@-webkit-keyframes spin{
+    25%{-webkit-transform-origin:center bottom; -webkit-transform:rotate(-30Deg);}
+    75%{-webkit-transform-origin:center bottom; -webkit-transform:rotate(30Deg);}
+}
+
+@keyframes spin{
+    25%{transform-origin:center bottom;transform:rotate(-30Deg);}
+    75%{transform-origin:center bottom;transform:rotate(30Deg);}
+}
